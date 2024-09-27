@@ -4,11 +4,11 @@ const infoAboutSam = "Sam is going to codingschool";
 const susi = "Susi";
 const and = "and";
 
-const erste = infoAboutSam.replace("codingschool", "school") + " " + and + " to the movie theater";
-const zweite = infoAboutSam.slice(infoAboutSam.indexOf("Sam"), infoAboutSam.indexOf("to")) + "to the movie theater";
-const dritte = susi + " " + and + " " + infoAboutSam.replace("is", "are").replace("codingschool", "school");
-const vierte = susi + " " + and + " " + infoAboutSam.replace("is", "are").replace("codingschool", "gym") + " " + and + " to the movie theater";
-const fuenfte = infoAboutSam.replace("Sam", "Susi").replace("codingschool", "school") + " " + and + " to the movie theater"
+const erste = infoAboutSam.replace("codingschool", "school").concat(" ".concat(and.concat(" to the movie theater")));
+const zweite = infoAboutSam.slice(infoAboutSam.indexOf("Sam"), infoAboutSam.indexOf("to")).concat(" to the movie theater");
+const dritte = susi.concat(" ".concat(and.concat(" ".concat(infoAboutSam.replace("is", "are").replace("codingschool", "school")))));
+const vierte = susi.concat(" ".concat(and.concat(" ".concat(infoAboutSam.replace("is", "are").replace("codingschool", "gym").concat(" ".concat(and.concat(" to the movie theater")))))));
+const fuenfte = infoAboutSam.replace("Sam", "Susi").replace("codingschool", "school").concat(" ".concat(and.concat(" to the movie theater")));
 
 const resultDiv = document.querySelector("div");
 
