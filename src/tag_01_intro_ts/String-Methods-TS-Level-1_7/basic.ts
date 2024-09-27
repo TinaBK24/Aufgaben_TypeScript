@@ -6,12 +6,13 @@ const samsStatusBad = samsStatus.replace("good", "bad").replace("codingschool", 
 const susisStatus = samsStatus.replace("Sam", "Susi").replace("codingschool", "school");
 const samsTennisStatus = samsStatus.replace("codingschool", "tennis");
 
-const resultDiv = document.createElement("div");
-document.body.appendChild(resultDiv);
+const resultDiv = document.querySelector("div");
 
-resultDiv.innerHTML += `<p>${samsStatusBad}</p>`;
+if (resultDiv){
+resultDiv.innerHTML = `<p>${samsStatusBad}</p>`;
 resultDiv.innerHTML += `<p>${susisStatus}</p>`;
 resultDiv.innerHTML += `<p>${samsTennisStatus}</p>`;
+}
 
 //document.write(samsStatusBad + "");
 //document.write(susisStatus + "");

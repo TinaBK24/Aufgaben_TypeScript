@@ -10,11 +10,12 @@ const dritte = susi + " " + and + " " + infoAboutSam.replace("is", "are").replac
 const vierte = susi + " " + and + " " + infoAboutSam.replace("is", "are").replace("codingschool", "gym") + " " + and + " to the movie theater";
 const fuenfte = infoAboutSam.replace("Sam", "Susi").replace("codingschool", "school") + " " + and + " to the movie theater"
 
-const resultDiv = document.createElement("div");
-document.body.appendChild(resultDiv);
+const resultDiv = document.querySelector("div");
 
+if (resultDiv){
 resultDiv.innerHTML += `<p>${erste}</p>`;
 resultDiv.innerHTML += `<p>${zweite}</p>`;
 resultDiv.innerHTML += `<p>${dritte}</p>`;
 resultDiv.innerHTML += `<p>${vierte}</p>`;
 resultDiv.innerHTML += `<p>${fuenfte}</p>`;
+}

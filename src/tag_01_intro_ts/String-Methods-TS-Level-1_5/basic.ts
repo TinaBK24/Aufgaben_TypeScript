@@ -18,10 +18,11 @@ const school: string = whereIsSusi.substring(24);
 // sollte man stattdessen Methoden wie innerHTML oder 
 // textContent verwenden, um Inhalte in das DOM einzufügen.
 
-const resultDiv = document.createElement("div");
-document.body.appendChild(resultDiv);
+const resultDiv = document.querySelector("div");
 
-resultDiv.innerHTML += `<p>${susi}</p>`;
+if (resultDiv){
+resultDiv.innerHTML = `<p>${susi}</p>`;
 resultDiv.innerHTML += `<p>${is}</p>`;
 resultDiv.innerHTML += `<p>${school}</p>`;
 resultDiv.innerHTML += `<p>${susi} ${is} ${school}</p>`;
+}
