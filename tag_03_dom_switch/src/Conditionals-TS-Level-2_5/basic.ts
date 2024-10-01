@@ -1,5 +1,7 @@
 //* Conditionals-TS-Level-2_5
 
+const checkBtn = document.querySelector("input[type='button']") as HTMLInputElement;
+
 function check(){
 const bundeslandInput = document.querySelector("#bundeslandInfo") as HTMLInputElement;
 const bundeslandInfo = bundeslandInput.value.toLowerCase();
@@ -61,6 +63,6 @@ let info: string = " "; //необхідно дати значення, хоча
     ergebnis.innerHTML = info;
 }
 
-// щоб кнопка відреагувала
-const checkBtn = document.querySelector("input[type='button']") as HTMLInputElement;
-checkBtn.addEventListener("click", check);
+if(checkBtn){
+    checkBtn.addEventListener("click", check);
+}

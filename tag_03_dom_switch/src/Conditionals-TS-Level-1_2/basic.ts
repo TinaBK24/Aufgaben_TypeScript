@@ -20,4 +20,6 @@ function weather(){
     }
 }
 
-inputBtn.addEventListener("click", weather);
+if(inputBtn){
+    inputBtn.addEventListener("click", weather);
+}

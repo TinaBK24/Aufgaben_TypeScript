@@ -14,4 +14,6 @@ function adult(){
     }
 }
 
-inputBtn.addEventListener("click", adult);
+if(adult){
+    inputBtn.addEventListener("click", adult);
+}
