@@ -5,7 +5,7 @@ const bundeslandInput = document.querySelector("#bundeslandInfo") as HTMLInputEl
 const bundeslandInfo = bundeslandInput.value.toLowerCase();
 const ergebnis = document.querySelector("#bundeslandInfoErgebnis") as HTMLElement;
 
-let info: string = " ";
+let info: string = " "; //необхідно дати значення, хоча би пробіл
 
     switch(bundeslandInfo){
         case "baden-württemberg":
@@ -61,9 +61,6 @@ let info: string = " ";
     ergebnis.innerHTML = info;
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-    const checkBtn = document.querySelector("input[type='button']") as HTMLInputElement;
-    if(checkBtn){
-        checkBtn.addEventListener("click", check);
-    }
-})
+// щоб кнопка відреагувала
+const checkBtn = document.querySelector("input[type='button']") as HTMLInputElement;
+checkBtn.addEventListener("click", check);
