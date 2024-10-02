@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Project-TS Mehrwertsteuer-Rechner-App</title>
+</head>
+
+<body>
+    <section>
+        <h1>Mehrwertsteuer-Rechner</h1>
+        <form>
+            <article>
+                <p>Was soll berechnet werden?</p>
+                <div>
+                    <input type="radio" name="netto_brutto" value="nt_bt" id="nt_bt" checked>
+                    <label for="nt_bt">Mehrwertsteuer aufschlagen (Netto zu Brutto)</label>
+                </div>
+                <div>
+                    <input type="radio" name="netto_brutto" value="bt_nt" id="bt_nt">
+                    <label for="bt_nt">Mehrwertsteuer aufschlagen (Brutto zu Netto)</label>
+                </div>
+            </article>
+            <article>
+                <p>Mehrwertsteuersatz</p>
+                <div>
+                    <input type="radio" name="prozent" value="19" checked>
+                    <label for="neunzehn">19%</label>
+                </div>
+                <div>
+                    <input type="radio" name="prozent" value="7">
+                    <label for="sieben">7%</label>
+                </div>
+            </article>
+            <article>
+                <label for="userInput">Nettobetrag (Preis ohne Mehrwertsteuer) in Euro<span>*</span></label>
+                <input type="number" name="userInput" id="userInput">
+            </article>
+            <input type="button" value="Berechnen" id="btn">
+            <article>
+                <p>Ergebnis</p>
+                <div>
+                    <p>Mehrwertsteuerbetrag</p>
+                    <p><span id="resultMwsBetrag"></span> €</p>
+                </div>
+                <div>
+                    <p>Bruttobetrag (Endpreis)</p>
+                    <p><span id="resultBtBetrag"></span> €</p>
+                </div>
+            </article>
+        </form>
+    </section>
+
+    <script type="module" src="./project.ts"></script>
+</body>
+
+</html>
