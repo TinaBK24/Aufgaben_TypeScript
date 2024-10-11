@@ -27,9 +27,9 @@ function findArtwork(artworkName: string){
     const tlcArtworkName = artworkName.toLowerCase();
 
     // шукати картину в масиві artworks, де є назва яку я ввела (artworkName)
-    const artwork = artworks.find(art => art.toLowerCase().includes(tlcArtworkName));
+    const artwork = artworks.find((art: string) => art.toLowerCase().includes(tlcArtworkName));
     // аналогічно попередньому в масиві artworkDates
-    const artworkDate = artworkDates.find(date => date.toLowerCase().includes(tlcArtworkName));
+    const artworkDate = artworkDates.find((date: string) => date.toLowerCase().includes(tlcArtworkName));
 
     // Якщо жодна з змінних artwork або artworkDate не містить значення (тобто, якщо картину не знайдено)
     // на консолі виводиться повідомлення про те, що картина не знайдена, і функція завершує виконання (return)
@@ -48,6 +48,7 @@ function findArtwork(artworkName: string){
     console.log(`"${normArtworkName}" wurde von ${artist} im Jahre ${year} gemalt`);
 }
 
+findArtwork("Die Sternennacht");
 findArtwork("guernica");
 findArtwork("DIE Geburt der Venus");
 findArtwork("Die Nachtwache");
