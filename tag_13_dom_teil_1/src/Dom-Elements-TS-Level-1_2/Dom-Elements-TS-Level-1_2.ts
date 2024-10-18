@@ -13,11 +13,9 @@ function changeColor(){
 
         if(originalColor){
             element.style.backgroundColor = "black";
-            element.style.color = "white";
 
         } else {
             element.style.backgroundColor = "";
-            element.style.color = "";
         }
     }
 
