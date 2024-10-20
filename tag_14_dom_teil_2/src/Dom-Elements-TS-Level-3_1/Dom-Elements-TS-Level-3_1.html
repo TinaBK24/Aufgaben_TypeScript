@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom-Elements-TS-Level-3_1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .todo-item {
+            display: flex;
+            justify-content: space-between;
+            width: 300px;
+            margin-bottom: 10px;
+        }
+
+        .todo-item label {
+            display: flex;
+            align-items: center;
+        }
+
+        .completed {
+            text-decoration: line-through;
+        }
+
+        .delete-btn {
+            color: red;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Meine Todos</h1>
+    <input id="todo-input" type="text" placeholder="Add a new item">
+    <button id="add-btn">add</button>
+    <div id="todo-list"></div>
+
+    <script type="module" src="./Dom-Elements-TS-Level-3_1.ts"></script>
+</body>
+
+</html>
