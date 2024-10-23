@@ -90,6 +90,7 @@ function addItAllUp(): void {
     console.log('Die maximale Anzahl der Aufgaben ist: ' + result);
     resultOutside = result;
 }
+addItAllUp();
 
 if (array.length > 0 && array.length <= 3 && array2.length > 0 && array2.length <= 3) {
     console.log('Die Anzahl der Aufgaben liegt zwischen 1 und 2.');
