@@ -9,7 +9,7 @@ const flavor4 = new IceCreamFlavor("Pistazie", 2.0, true);
 
 const iceCreamFlavorArr: IceCreamFlavor[] = [flavor1, flavor2, flavor3, flavor4];
 
-iceCreamFlavorArr.forEach((popular) => {
+iceCreamFlavorArr.forEach((popular: IceCreamFlavor) => {
     if(popular._isPopular){
         console.log(popular._name);
     }
