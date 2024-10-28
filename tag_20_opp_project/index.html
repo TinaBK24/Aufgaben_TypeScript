@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OOP-Projekt-TS-Level-3_1</title>
+</head>
+
+<body>
+  <section>
+    <form>
+      <h1>Animals</h1>
+      <select name="animalsType" id="animalsType">
+        <option value="lion" selected>🦁 Lion</option>
+        <option value="bear">🐻 Bear</option>
+        <option value="monkey">🐒 Monkey</option>
+        <option value="turtle">🐢 Turtle</option>
+        <option value="crocodile">🐊 Crocodile</option>
+        <option value="parrot">🐦 Parrot</option>
+        <option value="eagle">🦅 Eagle</option>
+        <option value="shark">🦈 Shark</option>
+        <option value="lizard">🦎 Lizard</option>
+        <option value="swan">🦢 Swan</option>
+        <option value="clownfish">🤡 Clownfish</option>
+        <option value="pufferfish">🐡 Pufferfish</option>
+        <option value="panda">🐻 Panda</option>
+      </select>
+      <div>
+        <label for="name">Name: </label>
+        <input type="text" name="name" id="animalName" required>
+      </div>
+      <div>
+        <label for="year">Year: </label>
+        <input type="number" id="animalYear" required>
+      </div>
+      <div>
+        <label for="continents">Continents: </label>
+        <input type="text" name="continents" id="animalContinents" required>
+      </div>
+      <div>
+        <label for="needs">Special needs: </label>
+        <input type="text" name="needs" id="animalSpecialNeeds">
+      </div>
+      </select>
+      <input type="button" value="Create Animal" id="inputBtn">
+    </form>
+    <article>
+      <div>
+        <h2>Reptile</h2>
+        <div id="outputReptile"></div>
+      </div>
+      <div>
+        <h2>Bird</h2>
+        <div id="outputBird"></div>
+      </div>
+      <div>
+        <h2>Fish</h2>
+        <div id="outputFish"></div>
+      </div>
+      <div>
+        <h2>Mammal</h2>
+        <div id="outputMammal"></div>
+      </div>
+    </article>
+  </section>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
